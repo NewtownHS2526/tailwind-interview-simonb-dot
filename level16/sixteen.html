@@ -11,7 +11,9 @@
         @tailwind utilities;
         
         /* Create your custom button class here using @apply */
-        
+        .btn-primary{
+            @apply bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600;
+        }
     </style>
 </head>
 <body class="p-8 bg-gray-100">
@@ -19,7 +21,7 @@
         <button class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600">
             Button with Utilities
         </button>
-        <button class="">
+        <button class="btn-primary">
             Button with @apply Class
         </button>
     </div>
